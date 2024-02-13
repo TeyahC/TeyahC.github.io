@@ -3,8 +3,7 @@
 </head>
 <body onload ="myFunction()">
 
-<h1>Hello</h1>
-  <div id = "div1"></div>
+
   <script>
     const requestOptions = {
   method: "GET",
@@ -12,7 +11,6 @@
 };
 function myFunction()
 {
-
 fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
   .then((response) => response.text())
   .then((result) =>
@@ -34,17 +32,7 @@ fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
   })
   .catch((error) => console.error(error));
 }
-
-function Response()
-{
-  const para = document.createElement("p");
-  const node = document.createTextNode("This is a new paragraph.");
-  para.appendChild(node);
-  const element = document.getElementById("div1");
-  element.appendChild(para);
-}
-
-    
+ 
     
   </script>
 </body>
