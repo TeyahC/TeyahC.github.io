@@ -22,7 +22,7 @@ fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
     var APIResponse = JSON.parse(result);
     myObject.title = "EUR";
     myObject.detail = APIResponse.rates.EUR;
-    document.body.innerHTML= myObject.text();
+    document.body.innerHTML= JSON.stringify(myObject);
   })
   .catch((error) => console.error(error));
 }
