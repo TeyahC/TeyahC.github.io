@@ -15,7 +15,7 @@ function myFunction()
 
 fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
   .then((response) => response.text())
-  .then((result) => document.body.innerhtml= result)
+  .then((result) => document.body.innerHTML= result)
   .catch((error) => console.error(error));
 }
 
