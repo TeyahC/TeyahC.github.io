@@ -1,14 +1,11 @@
 <html>
 <head>
-</head>
-<body onload ="myFunction()">
-
-
-  <script>
-    const requestOptions = {
+    <script>
+  const requestOptions = {
   method: "GET",
   redirect: "follow"
 };
+      
 function myFunction()
 {
 fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
@@ -32,9 +29,13 @@ fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
   })
   .catch((error) => console.error(error));
 }
- 
-    
   </script>
+  
+</head>
+<body onload ="myFunction()">
+
+
+
 </body>
   
 
