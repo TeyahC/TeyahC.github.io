@@ -15,7 +15,11 @@ function myFunction()
 
 fetch("https://api.vatcomply.com/rates?base=GBP", requestOptions)
   .then((response) => response.text())
-  .then((result) => document.body.innerHTML= result)
+  .then((result) =>
+  {
+    
+    document.body.innerHTML= result)
+  }
   .catch((error) => console.error(error));
 }
 
@@ -27,6 +31,8 @@ function Response()
   const element = document.getElementById("div1");
   element.appendChild(para);
 }
+
+    
     
   </script>
 </body>
